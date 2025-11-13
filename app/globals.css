@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  @apply bg-white text-gray-900 font-sans;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-display font-bold;
+}
+
+/* Bold, energetic button styles */
+.btn-primary {
+  @apply bg-black text-white px-6 py-3 rounded-lg font-bold hover:bg-gray-800 transition-all transform hover:scale-105 shadow-lg;
+}
+
+.btn-secondary {
+  @apply bg-tc-yellow text-black px-6 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-all transform hover:scale-105 shadow-lg;
+}
+
+/* Gen Z friendly gradients */
+.gradient-text {
+  @apply bg-gradient-to-r from-tc-orange via-tc-pink to-tc-purple bg-clip-text text-transparent;
+}
+
+/* Leaflet map styles */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+}
+
+.leaflet-popup-content {
+  margin: 12px;
+}
