@@ -92,7 +92,7 @@ export default function MapSearch({ onCitySelect }: MapSearchProps) {
 
       {showSuggestions && searchQuery && filteredCities.length === 0 && (
         <div className="absolute z-50 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg p-4">
-          <p className="text-gray-600 text-sm">No cities found matching "{searchQuery}"</p>
+          <p className="text-gray-600 text-sm">No cities found matching &quot;{searchQuery}&quot;</p>
         </div>
       )}
     </div>

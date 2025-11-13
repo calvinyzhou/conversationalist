@@ -33,7 +33,7 @@ export default function Footer() {
         <div>
           <h3 className="font-bold text-lg mb-4">Our Mission</h3>
           <p className="text-gray-400 text-sm">
-            Empowering 1,000,000 Gen Z'ers to have echo-chamber-breaking conversations.
+            Empowering 1,000,000 Gen Z&apos;ers to have echo-chamber-breaking conversations.
           </p>
         </div>
       </div>
