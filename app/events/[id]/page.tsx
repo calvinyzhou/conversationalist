@@ -10,6 +10,13 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
+// Generate static params for static export
+export function generateStaticParams() {
+  return sampleEvents.map((event) => ({
+    id: event.id,
+  }));
+}
+
 export default function EventDetailPage() {
   const params = useParams();
   const router = useRouter();

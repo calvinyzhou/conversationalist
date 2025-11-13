@@ -9,6 +9,13 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
+// Generate static params for static export
+export function generateStaticParams() {
+  return sampleUsers.map((user) => ({
+    id: user.id,
+  }));
+}
+
 export default function UserProfilePage() {
   const params = useParams();
   const { users } = useStore();
