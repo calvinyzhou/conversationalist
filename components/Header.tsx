@@ -14,7 +14,7 @@ export default function Header() {
           <h1 className="text-2xl font-bold font-display">
             <Link href="/" className="hover:opacity-80 transition-opacity flex items-center">
               <Image 
-                src="/logo.png" 
+                src="/conversationalist/logo.png" 
                 alt="The Conversationalist" 
                 width={200}
                 height={40}
